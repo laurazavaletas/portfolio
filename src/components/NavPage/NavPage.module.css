@@ -1,0 +1,4 @@
+.section{
+    display: grid;
+    grid-template-rows: 96px 1fr;
+}

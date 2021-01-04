@@ -4,6 +4,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "@internal/pages/Home/Home";
 import NotFound from '@internal/pages/NotFound/NotFound';
+import About from '@internal/pages/AboutMe/AboutMe'
 
 function App() {
     return (
@@ -12,6 +13,9 @@ function App() {
                 <Switch>
                     <Route path="/" exact>
                         <Home/>
+                    </Route>
+                    <Route path="/about-me">
+                        <About/>
                     </Route>
                     <Route>
                         <NotFound/>

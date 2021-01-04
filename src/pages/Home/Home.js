@@ -14,7 +14,7 @@ const Home = props => {
         <FPBSection bgImage={homeBg} className={classes.container}>
             <HomeName />
             <figure>
-                <img src={logo}/>
+                <img src={logo} alt="Logo"/>
             </figure>
             <MainFooter/>
         </FPBSection>

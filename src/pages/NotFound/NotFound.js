@@ -8,7 +8,7 @@ import FPBSection from '@internal/components/FullPageBgSection/FullPageBgSection
 const NotFound = props => {
     return (
         <FPBSection bgImage={bg} className={ classes.container }>
-            <h1> <span>404</span> Not Found :( Sorry </h1>
+            <h1> <span>404</span> Not Found :( Sorry.</h1>
         </FPBSection>
     );
 }
