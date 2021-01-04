@@ -7,4 +7,6 @@
 
 :root{
     font-family: "Pluto", sans-serif;
+    --main-color: #72509B;
+    --active-color: #EF7DAC;
 }
