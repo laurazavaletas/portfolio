@@ -1,0 +1,11 @@
+@font-face{
+    font-family: "Pluto";
+    src: url("./assets/fonts/PlutoLight.otf");
+    font-weight: lighter;
+}
+
+@font-face{
+    font-family: "Pluto";
+    src: url("./assets/fonts/PlutoBold.otf");
+    font-weight: bold;
+}
