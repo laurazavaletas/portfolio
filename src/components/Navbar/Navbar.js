@@ -6,7 +6,7 @@ import logo from '@internal/assets/images/navbar/logo.png';
 import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = ({ about }) => {
-    const color = about ? "#fff" : "#72509B"
+    const color = about ? "#fff" : "#72509B";
     return (
         <nav className={classes.navbar}>
             <Link to="/" className={ classes.logoContainer }>

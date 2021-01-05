@@ -6,8 +6,8 @@
 }
 
 .logoContainer{
-    width: 60px;
-    height: 60px;
+    width: 96px;
+    height: 96px;
 
     margin-right: 5rem;
 }
@@ -22,8 +22,11 @@
     flex: 1 0;
     display: flex;
 
+    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 
     font-weight: bold;
 
@@ -44,4 +47,5 @@
 
 .links>a.active{
     color: var(--active-color);
+    text-decoration: underline;
 }

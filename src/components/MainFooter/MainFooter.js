@@ -12,7 +12,7 @@ const MainFooter = props => {
     return (
         <footer className={classes.menu}>
             {
-                links.map(link => (<a key={link.id} href={ link.href} target="_blank">
+                links.map(link => (<a key={link.id} href={ link.href} target="_blank" rel="noreferrer">
                     { link.text }
                 </a>))
             }

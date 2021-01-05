@@ -8,7 +8,7 @@ import FPBSection from '@internal/components/FullPageBgSection/FullPageBgSection
 const NavPage = ({ bgimage, children, className, about}) => {
     return (
         <FPBSection bgImage={bgimage} className={ [classes.section, className].join(" ") }>
-            <Navbar about/>
+            <Navbar about={about}/>
             { children }
         </FPBSection>
     );

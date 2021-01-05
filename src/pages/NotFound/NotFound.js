@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './Notfound.module.css';
-import bg from '@internal/assets/images/backgrounds/notfound.png'
+import bg from '@internal/assets/images/backgrounds/notfound.jpg'
 
 import FPBSection from '@internal/components/FullPageBgSection/FullPageBgSection';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import classes from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 import FPBSection from '@internal/components/FullPageBgSection/FullPageBgSection';
 import homeBg from '@internal/assets/images/backgrounds/home.jpg';
@@ -13,9 +14,9 @@ const Home = props => {
     return (
         <FPBSection bgImage={homeBg} className={classes.container}>
             <HomeName />
-            <figure>
+            <Link to="/about-me">
                 <img src={logo} alt="Logo"/>
-            </figure>
+            </Link>
             <MainFooter/>
         </FPBSection>
     );
