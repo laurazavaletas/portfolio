@@ -6,6 +6,7 @@ import Home from "@internal/pages/Home/Home";
 import NotFound from '@internal/pages/NotFound/NotFound';
 import About from '@internal/pages/AboutMe/AboutMe';
 import StartJourney from '@internal/pages/StartJourney/StartJourney';
+import Projects from '@internal/pages/Projects/Projects';
 
 function App() {
     return (
@@ -20,6 +21,9 @@ function App() {
                     </Route>
                     <Route path="/start-journey">
                         <StartJourney/>
+                    </Route>
+                    <Route path="/projects">
+                        <Projects/>
                     </Route>
                     <Route>
                         <NotFound/>
