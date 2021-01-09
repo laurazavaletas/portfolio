@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import classes from './ProjectsLayout.module.css';
 
 import FPBSection from '@internal/components/FullPageBgSection/FullPageBgSection';
+import PageFooter from '@internal/components/PageFooter/PageFooter';
 
 const projects = [
     { id: "branding", title: "Branding", path: "/projects/branding" },
@@ -36,6 +37,7 @@ const ProjectsLayout = ({ children, bgImage, title }) => {
                     )) }
                 </nav>
             </div>
+            <PageFooter/>
         </FPBSection>
     );
 }

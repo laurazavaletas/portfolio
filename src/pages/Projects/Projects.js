@@ -6,14 +6,18 @@ import { Helmet } from 'react-helmet';
 import classes from './Projects.module.css';
 import bg from '@internal/assets/images/backgrounds/projects.jpg';
 
+import EditorialBG from "@internal/assets/images/backgrounds/editorial.jpg";
+import PDevBG from "@internal/assets/images/backgrounds/projectDev.jpg";
+import BrandingBG from "@internal/assets/images/backgrounds/branding.jpg";
+
 import NavPage from '@internal/components/NavPage/NavPage';
 import NotFound from '@internal/pages/NotFound/NotFound'
 import ProjectsLayout from '@internal/components/ProjectsLayout/ProjectsLayout';
 
 const projects = [
-    { id: "branding", title: "Branding", path: "/branding" },
-    { id: "project-dev", title: "Project Development", path: "/project-dev" },
-    { id: "editorial", title: "Editorial Design", path: "/editorial-design" },
+    { id: "branding", title: "Branding", path: "/branding", bg: BrandingBG },
+    { id: "project-dev", title: "Project Development", path: "/project-dev", bg: PDevBG },
+    { id: "editorial", title: "Editorial Design", path: "/editorial-design", bg: EditorialBG },
 ]
 
 const Projects = props => {
@@ -21,7 +25,7 @@ const Projects = props => {
 
     return (
         <>
-            <NavPage bgimage={bg}>
+            <NavPage bgimage={bg} about>
                 <main className={ classes.container } ref={mainRef}>
                     <h1> Projects </h1>
                     <div className={classes.mainmenu}>
@@ -54,8 +58,7 @@ const Projects = props => {
                                     <Helmet>
                                         <title> Laura Zavaleta || {project.title} </title>
                                     </Helmet>
-                                    <ProjectsLayout title={ project.title }>
-                                        <p> {project.title} </p>
+                                    <ProjectsLayout title={project.title} bgImage={project.bg}>
                                     </ProjectsLayout>
                                 </Route>
                             ))}

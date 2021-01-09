@@ -13,6 +13,7 @@
 
     font-size: 4rem;
     letter-spacing: 0.25ch;
+    text-transform: uppercase;
     color: var(--main-title-color);
 }
 
@@ -32,13 +33,14 @@
     display: flex;
     margin: 1rem;
 
-    background-color: var(--main-color-alpha);
-
     width: 90%;
     max-width: 500px;
     height: 250px;
 
+    background-color: #ffffff88;
+
     border-radius: 1rem;
+    border: 1px solid var(--main-color);
 
     justify-content: center;
     align-items: center;
@@ -46,7 +48,7 @@
 
     text-decoration: none;
     font-size: 1.5rem;
-    color: white;
+    color: var(--main-color);
     font-weight: bold;
     letter-spacing: 0.3ch;
 
@@ -55,13 +57,17 @@
 
 .mainmenu-link:hover{
     background-color: var(--main-color);
+    color: white;
     transform: scale(1.1);
 }
 
-.mainmenu-link-active{
-    background-color: var(--active-color-alpha);
+a.mainmenu-link-active{
+    background-color: #ffffff88;
+    border: 1px solid var(--active-color);
+    color: var(--active-color);
 }
 
 .mainmenu-link-active:hover{
     background-color: var(--active-color);
+    color: white;
 }
