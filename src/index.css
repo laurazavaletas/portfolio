@@ -9,4 +9,8 @@
     font-family: "Pluto", sans-serif;
     --main-color: #72509B;
     --active-color: #EF7DAC;
+    --main-color-alpha: #72509b88;
+    --active-color-alpha: #EF7DAC88;
+    --main-title-color: #9f89bb;
+
 }

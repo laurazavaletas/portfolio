@@ -1,0 +1,44 @@
+.container{
+    display: grid;
+
+    grid-template-columns: 1fr 20%;
+}
+
+.title{
+    padding: 3rem;
+
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2ch;
+}
+
+.links{
+    padding: 1rem;
+
+    position: sticky;
+    top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.links>a{
+    display: inline-block;
+    margin: 1rem 0;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--main-color);
+}
+
+.links>a:hover{
+    text-decoration: underline;
+}
+
+a.active{
+    color: var(--active-color);
+}

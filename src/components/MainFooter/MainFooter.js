@@ -5,7 +5,7 @@ import classes from './MainFooter.module.css';
 const links = [
     { id: "instagram", text: "Instagram", href: "https://google.com" },
     { id: "behance", text: "Behance", href: "https://google.com" },
-    { id: "app_store", text: "App Store", href: "https://google.com" }
+    { id: "linkedin", text: "Linkedin", href: "https://google.com" }
 ]
 
 const MainFooter = props => {
