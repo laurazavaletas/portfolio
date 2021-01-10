@@ -10,6 +10,8 @@ import EditorialBG from "@internal/assets/images/backgrounds/editorial.jpg";
 import PDevBG from "@internal/assets/images/backgrounds/projectDev.jpg";
 import BrandingBG from "@internal/assets/images/backgrounds/branding.jpg";
 
+import Branding from './Branding/Branding';
+
 import NavPage from '@internal/components/NavPage/NavPage';
 import NotFound from '@internal/pages/NotFound/NotFound'
 import ProjectsLayout from '@internal/components/ProjectsLayout/ProjectsLayout';
@@ -59,6 +61,7 @@ const Projects = props => {
                                         <title> Laura Zavaleta || {project.title} </title>
                                     </Helmet>
                                     <ProjectsLayout title={project.title} bgImage={project.bg}>
+                                        <Branding/>
                                     </ProjectsLayout>
                                 </Route>
                             ))}
