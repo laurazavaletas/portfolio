@@ -15,7 +15,7 @@ const projects = [
 const ProjectsLayout = ({ children, bgImage, title }) => {
     const titleRef = useRef();
     return (
-        <FPBSection bgImage={bgImage}>
+        <FPBSection bgImage={bgImage} className={classes.master}>
             <h1 ref={titleRef}
                 className={classes.title}>
                 {title}
