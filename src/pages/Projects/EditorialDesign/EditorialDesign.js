@@ -32,6 +32,15 @@ const EditorialDesign = props => {
                     </p>
                 </div>
             </article>
+            <article>
+                <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=c3s65slcjl" width="100%" height="450px" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen />
+                <div>
+                    <h3> GAIA I II III </h3>
+                    <p>
+                    The project consisted in transforming the students’ favorite album into a book. On this occasion, the Gaia series by the Spanish band Mägo de Oz was resumed. Each album tells a story and in each song on the albums we can hear how it evolves until it converges on the Atlantia song from the third and last album of this trilogy, Gaia III: Atlantia.
+                    </p>
+                </div>
+            </article>
         </section>
     );
 }
