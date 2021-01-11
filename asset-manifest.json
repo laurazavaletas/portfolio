@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.03efcf06.chunk.css",
+    "main.js": "/portfolio/static/js/main.2380e123.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2380e123.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.e5b270a5.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e5b270a5.js.map",
+    "static/js/2.a041498c.chunk.js": "/portfolio/static/js/2.a041498c.chunk.js",
+    "static/js/2.a041498c.chunk.js.map": "/portfolio/static/js/2.a041498c.chunk.js.map",
+    "static/js/3.7f468ba6.chunk.js": "/portfolio/static/js/3.7f468ba6.chunk.js",
+    "static/js/3.7f468ba6.chunk.js.map": "/portfolio/static/js/3.7f468ba6.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.03efcf06.chunk.css.map": "/portfolio/static/css/main.03efcf06.chunk.css.map",
+    "static/js/2.a041498c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a041498c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/portfolio/static/media/PlutoLight.941aac96.otf",
+    "static/media/about.283bb5dd.jpg": "/portfolio/static/media/about.283bb5dd.jpg",
+    "static/media/branding.280418df.jpg": "/portfolio/static/media/branding.280418df.jpg",
+    "static/media/button.fe8a106c.png": "/portfolio/static/media/button.fe8a106c.png",
+    "static/media/editorial.ce5726d9.jpg": "/portfolio/static/media/editorial.ce5726d9.jpg",
+    "static/media/home.c9f1e0ad.jpg": "/portfolio/static/media/home.c9f1e0ad.jpg",
+    "static/media/logo.8357fa35.png": "/portfolio/static/media/logo.8357fa35.png",
+    "static/media/logo1.cb4e41eb.png": "/portfolio/static/media/logo1.cb4e41eb.png",
+    "static/media/logo2.c86fe416.png": "/portfolio/static/media/logo2.c86fe416.png",
+    "static/media/logo3.35d48f61.png": "/portfolio/static/media/logo3.35d48f61.png",
+    "static/media/logo4.7d9f03cc.png": "/portfolio/static/media/logo4.7d9f03cc.png",
+    "static/media/logo5.e1092226.png": "/portfolio/static/media/logo5.e1092226.png",
+    "static/media/notfound.d4afe02a.jpg": "/portfolio/static/media/notfound.d4afe02a.jpg",
+    "static/media/projectDev.4cb61e0a.jpg": "/portfolio/static/media/projectDev.4cb61e0a.jpg",
+    "static/media/projects.c9f1e0ad.jpg": "/portfolio/static/media/projects.c9f1e0ad.jpg",
+    "static/media/startjourney.c9f1e0ad.jpg": "/portfolio/static/media/startjourney.c9f1e0ad.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5b270a5.js",
+    "static/js/2.a041498c.chunk.js",
+    "static/css/main.03efcf06.chunk.css",
+    "static/js/main.2380e123.chunk.js"
+  ]
+}
