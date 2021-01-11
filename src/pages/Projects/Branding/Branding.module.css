@@ -10,6 +10,8 @@
 .container>a{
     display: inline-block;
     height: 40vh;
+
+    transition: all ease-in-out 250ms;
 }
 
 .container>a>img{
@@ -18,4 +20,8 @@
     height: 100%;
 
     object-fit: contain;
+}
+
+.container>a:hover{
+    transform: scale(1.05);
 }

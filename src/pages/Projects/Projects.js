@@ -11,15 +11,16 @@ import PDevBG from "@internal/assets/images/backgrounds/projectDev.jpg";
 import BrandingBG from "@internal/assets/images/backgrounds/branding.jpg";
 
 import Branding from './Branding/Branding';
+import EditorialDesign from './EditorialDesign/EditorialDesign';
 
 import NavPage from '@internal/components/NavPage/NavPage';
 import NotFound from '@internal/pages/NotFound/NotFound'
 import ProjectsLayout from '@internal/components/ProjectsLayout/ProjectsLayout';
 
 const projects = [
-    { id: "branding", title: "Branding", path: "/branding", bg: BrandingBG },
-    { id: "project-dev", title: "Project Development", path: "/project-dev", bg: PDevBG },
-    { id: "editorial", title: "Editorial Design", path: "/editorial-design", bg: EditorialBG },
+    { id: "branding", title: "Branding", path: "/branding", bg: BrandingBG, component: Branding },
+    { id: "project-dev", title: "Project Development", path: "/project-dev", bg: PDevBG, component: Branding },
+    { id: "editorial", title: "Editorial Design", path: "/editorial-design", bg: EditorialBG, component: EditorialDesign },
 ]
 
 const Projects = props => {
@@ -61,7 +62,7 @@ const Projects = props => {
                                         <title> Laura Zavaleta || {project.title} </title>
                                     </Helmet>
                                     <ProjectsLayout title={project.title} bgImage={project.bg}>
-                                        <Branding/>
+                                        <project.component/>
                                     </ProjectsLayout>
                                 </Route>
                             ))}
