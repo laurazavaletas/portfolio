@@ -2,7 +2,7 @@
   "name": "lz-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://douglashdezt.github.io/lz-portfolio",
+  "homepage": "https://laurazavaletas.github.io/portfolio",
   "dependencies": {
     "@internal/assets": "file:src/assets",
     "@internal/components": "file:src/components",
