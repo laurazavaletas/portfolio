@@ -28,7 +28,7 @@ const projects = [
 const Projects = props => {
     const mainRef = useRef();
     const location = useLocation();
-
+    
     return (
         <>
             <NavPage bgimage={bg} about>
@@ -39,10 +39,14 @@ const Projects = props => {
                             <NavLink
                                 className={classes["mainmenu-link"]}
                                 activeClassName={classes["mainmenu-link-active"]}
-                                onClick={() => window.scrollTo({
-                                    top: mainRef.current.offsetTop + mainRef.current.offsetHeight,
-                                    behavior: "smooth"
-                                })}
+                                onClick={() => {
+                                    setTimeout(() => {
+                                        window.scrollTo({
+                                            top: mainRef.current.offsetTop + mainRef.current.offsetHeight,
+                                            behavior: "smooth"
+                                        })
+                                    }, 50)
+                                }}
                                 key={project.id} to={`${props.match.path}${project.path}`}>
                                 {project.title}
                             </NavLink>

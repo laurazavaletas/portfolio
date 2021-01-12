@@ -100,7 +100,7 @@ const projects = [
 
 const ProjectDev = props => {
     return (
-        <sectiion>
+        <section>
             { projects.map(project => (
                 <Post
                     title={project.title}
@@ -110,7 +110,7 @@ const ProjectDev = props => {
                     { project.text }
                 </Post>
             )) }
-        </sectiion>
+        </section>
     );
 }
 
