@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 
-import { Switch, Route, withRouter, NavLink } from 'react-router-dom';
+import { Switch, Route, withRouter, NavLink, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import classes from './Projects.module.css';
 import bg from '@internal/assets/images/backgrounds/projects.jpg';
@@ -12,6 +13,7 @@ import BrandingBG from "@internal/assets/images/backgrounds/branding.jpg";
 
 import Branding from './Branding/Branding';
 import EditorialDesign from './EditorialDesign/EditorialDesign';
+import ProjectDev from './ProjectDev/ProjectDev';
 
 import NavPage from '@internal/components/NavPage/NavPage';
 import NotFound from '@internal/pages/NotFound/NotFound'
@@ -19,12 +21,13 @@ import ProjectsLayout from '@internal/components/ProjectsLayout/ProjectsLayout';
 
 const projects = [
     { id: "branding", title: "Branding", path: "/branding", bg: BrandingBG, component: Branding },
-    { id: "project-dev", title: "Project Development", path: "/project-dev", bg: PDevBG, component: Branding },
+    { id: "project-dev", title: "Project Development", path: "/project-dev", bg: PDevBG, component: ProjectDev },
     { id: "editorial", title: "Editorial Design", path: "/editorial-design", bg: EditorialBG, component: EditorialDesign },
 ]
 
 const Projects = props => {
     const mainRef = useRef();
+    const location = useLocation();
 
     return (
         <>
@@ -55,21 +58,25 @@ const Projects = props => {
                 </Route>
                 <Route>
                     <div>
-                        <Switch>
-                            {projects.map(project => (
-                                <Route key={project.id} path={`${props.match.path}${project.path}`}>
-                                    <Helmet>
-                                        <title> Laura Zavaleta || {project.title} </title>
-                                    </Helmet>
-                                    <ProjectsLayout title={project.title} bgImage={project.bg}>
-                                        <project.component/>
-                                    </ProjectsLayout>
+                        <AnimatePresence exitBeforeEnter initial={false}>
+                            <Switch location={location} key={location.pathname}>
+                                {projects.map(project => (
+                                    <Route exact key={project.id} path={`${props.match.path}${project.path}`}>
+                                        <motion.div exit={{ opacity: 0, dur: 500 }} initial={{ opacity: 0 }} animate={{opacity:1, dur: 500}}>
+                                            <Helmet>
+                                                <title> Laura Zavaleta || {project.title} </title>
+                                            </Helmet>
+                                            <ProjectsLayout title={project.title} bgImage={project.bg}>
+                                                <project.component/>
+                                            </ProjectsLayout>
+                                        </motion.div>
+                                    </Route>
+                                ))}
+                                <Route>
+                                    <NotFound/>
                                 </Route>
-                            ))}
-                            <Route>
-                                <NotFound/>
-                            </Route>
-                        </Switch>
+                            </Switch>
+                        </AnimatePresence>
                     </div>
                 </Route>
             </Switch>

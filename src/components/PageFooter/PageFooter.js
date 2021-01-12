@@ -13,7 +13,7 @@ const PageFooter = ({scrollTo}) => {
             <button
                 onClick={ 
                     () => { 
-                        window.scrollTo({ top: scrollTo, behavior: "smooth" });
+                        window.scrollTo({ top: scrollTo(), behavior: "smooth" });
                     }}>
                 <img src={toTopButton} alt="Top button"/>
             </button>

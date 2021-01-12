@@ -14,3 +14,12 @@
     --main-title-color: #9f89bb;
 
 }
+
+.slide{
+    background-color: transparent!important;
+}
+
+.thumbs{
+    display: flex;
+    justify-content: center;
+}

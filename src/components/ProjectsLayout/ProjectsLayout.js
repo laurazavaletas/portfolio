@@ -39,7 +39,7 @@ const ProjectsLayout = ({ children, bgImage, title }) => {
                 </nav>
             </div>
             {/* TODO: Chenge 0 to titleRef.current.offsetTop */}
-            <PageFooter scrollTo={0}/>
+            <PageFooter scrollTo={()=>titleRef.current.offsetTop}/>
         </FPBSection>
     );
 }
