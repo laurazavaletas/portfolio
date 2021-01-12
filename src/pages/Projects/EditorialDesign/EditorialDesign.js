@@ -41,7 +41,7 @@ const EditorialDesign = props => {
 
 const Post = ({ title, description, widgetURL }) => (
     <article>
-        <iframe src={widgetURL} width="100%" height="450px" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen />
+        <iframe title={ title} src={widgetURL} width="100%" height="450px" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen />
         <div>
             <h3> {title} </h3>
             <p>

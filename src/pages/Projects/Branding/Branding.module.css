@@ -9,7 +9,10 @@
 
 .container>a{
     display: inline-block;
+    width: 80%;
+    max-width: 600px;
     height: 40vh;
+    max-height: 350px;
 
     transition: all ease-in-out 250ms;
 }
