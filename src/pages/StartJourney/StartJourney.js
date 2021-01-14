@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import classes from './StartJourney.module.css';
 import bg from '@internal/assets/images/backgrounds/startjourney.jpg';
@@ -9,6 +10,9 @@ import MainFooter from '@internal/components/MainFooter/MainFooter';
 const StartJourney = props => {
     return (
         <NavPage bgimage={bg} about>
+            <Helmet>
+                <title> Laura Zavaleta || Start Journey </title>
+            </Helmet>
             <main className={classes.container}>
                 <div className={classes.title}>
                     <h1>Start</h1>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import bg from '@internal/assets/images/backgrounds/about.jpg';
 import photo from '@internal/assets/images/about/photo.png';
@@ -10,7 +11,10 @@ import PageFooter from '@internal/components/PageFooter/PageFooter';
 
 const AboutMe = props => {
     return (
-        <NavPage about bgimage={bg} className={ classes.page }>
+        <NavPage about bgimage={bg} className={classes.page}>
+            <Helmet>
+                <title> Laura Zavaleta || About me </title>
+            </Helmet>
             <section className={classes.container}>
                 <h1> About me </h1>
                 <div className={classes.main}>
@@ -30,9 +34,9 @@ const AboutMe = props => {
                     </figure>
                 </div>
                 <div className={classes.iframe}>
-                    <iframe width="100%" height="720" src="https://www.youtube.com/embed/6mKvzjSEGbM?autoplay=1&loop=1&playlist=6mKvzjSEGbM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{borderRadius: "1.5rem"}}/>
+                    <iframe title="Reel" width="100%" height="720" src="https://www.youtube.com/embed/6mKvzjSEGbM?autoplay=1&loop=1&playlist=6mKvzjSEGbM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{borderRadius: "1.5rem"}}/>
                 </div>
-                <PageFooter/>
+                <PageFooter scrollTo={0}/>
             </section>
         </NavPage>
     );

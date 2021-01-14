@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import classes from './Home.module.css';
 import { Link } from 'react-router-dom';
@@ -13,6 +14,9 @@ import MainFooter from '@internal/components/MainFooter/MainFooter';
 const Home = props => {
     return (
         <FPBSection bgImage={homeBg} className={classes.container}>
+            <Helmet>
+                <title> Laura Zavaleta || Home </title>
+            </Helmet>
             <HomeName />
             <Link to="/about-me">
                 <img src={logo} alt="Logo"/>

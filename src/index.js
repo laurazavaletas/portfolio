@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { HashRouter as Router } from "react-router-dom";
+import { AnimatePresence } from 'framer-motion';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AnimatePresence exitBeforeEnter >
+        <Router basename="/">
+            <App />
+        </Router>
+    </AnimatePresence>
   </React.StrictMode>,
   document.getElementById('root')
 );

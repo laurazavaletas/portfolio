@@ -1,16 +1,18 @@
 .post {
-    width: 100%;
     display: flex;
+    width: 100%;
+    height: auto;
 
     margin: 5rem 0;
 
     flex-wrap: wrap;
+    justify-content: center;
 } 
 
 .content{
-    padding: 0 5rem;
-    flex: 1 0;
-    min-width: 450px;
+    padding: 0 3rem;
+    width: 100%;
+    max-width: 425px;
 }
 
 .text-container{
@@ -38,7 +40,8 @@
 
 .carousel{
     padding: 0 2rem;
-    flex: 1 0 450px;
+    width: 100%;
+    max-width: 425px;
 }
 
 .carousel-img{

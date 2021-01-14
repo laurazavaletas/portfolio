@@ -31,34 +31,26 @@ const Projects = props => {
     
     return (
         <>
-            <NavPage bgimage={bg} about>
-                <main className={ classes.container } ref={mainRef}>
-                    <h1> Projects </h1>
-                    <div className={classes.mainmenu}>
-                        {projects.map(project => (
-                            <NavLink
-                                className={classes["mainmenu-link"]}
-                                activeClassName={classes["mainmenu-link-active"]}
-                                onClick={() => {
-                                    setTimeout(() => {
-                                        window.scrollTo({
-                                            top: mainRef.current.offsetTop + mainRef.current.offsetHeight,
-                                            behavior: "smooth"
-                                        })
-                                    }, 50)
-                                }}
-                                key={project.id} to={`${props.match.path}${project.path}`}>
-                                {project.title}
-                            </NavLink>
-                        )) }
-                    </div>
-                </main>
-            </NavPage>
             <Switch>
                 <Route path={props.match.path} exact>
                     <Helmet>
                         <title> Laura Zavaleta || Projects </title>
                     </Helmet>
+                    <NavPage bgimage={bg} about>
+                        <main className={ classes.container } ref={mainRef}>
+                            <h1> Projects </h1>
+                            <div className={classes.mainmenu}>
+                                {projects.map(project => (
+                                    <NavLink
+                                        className={classes["mainmenu-link"]}
+                                        activeClassName={classes["mainmenu-link-active"]}
+                                        key={project.id} to={`${props.match.path}${project.path}`}>
+                                        {project.title}
+                                    </NavLink>
+                                )) }
+                            </div>
+                        </main>
+                    </NavPage>
                 </Route>
                 <Route>
                     <div>
