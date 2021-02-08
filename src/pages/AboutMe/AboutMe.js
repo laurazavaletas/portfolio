@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import bg from '@internal/assets/images/backgrounds/about.jpg';
-import photo from '@internal/assets/images/about/photo.png';
+import photo from '@internal/assets/images/about/photo.jpg';
 
 import classes from './AboutMe.module.css';
 
@@ -34,7 +34,7 @@ const AboutMe = props => {
                     </figure>
                 </div>
                 <div className={classes.iframe}>
-                    <iframe title="Reel" width="100%" height="720" src="https://www.youtube.com/embed/6mKvzjSEGbM?autoplay=1&loop=1&playlist=6mKvzjSEGbM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{borderRadius: "1.5rem"}}/>
+                    <iframe title="Reel" width="100%" height="720" src="https://www.youtube.com/embed/bPo8VKuLF5o?autoplay=1&loop=1&playlist=bPo8VKuLF5o" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{borderRadius: "1.5rem"}}/>
                 </div>
                 <PageFooter scrollTo={()=>0}/>
             </section>

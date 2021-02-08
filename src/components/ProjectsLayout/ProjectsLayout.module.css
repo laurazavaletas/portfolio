@@ -5,15 +5,16 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 20%;
+    grid-template-areas: "content menu";
 }
 
 .title{
     padding: 3rem;
 
-    font-size: 5rem;
+    font-size: var(--title-size);
+    letter-spacing: 0.25ch;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.2ch;
 
     color: white;
 }

@@ -12,10 +12,10 @@
 
 .menu>a{
     display: inline-block;
-    padding: 16px;
+    padding: 1rem;
 
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: var(--nav-bar-link);
 
     color: var(--main-color);
     text-decoration: none;

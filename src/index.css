@@ -12,7 +12,22 @@
     --main-color-alpha: #72509b88;
     --active-color-alpha: #EF7DAC88;
     --main-title-color: #9f89bb;
+    
+    --title-size: 4.5rem; 
+    --subtitle-size: 1.7rem; 
+    --nav-bar-link: 1.6rem;
+    --nav-bar-pad: 1rem 3rem;
+    --logo-nav-space: 5rem;
+}
 
+@media screen and (max-width: 640px){
+    :root{
+        --title-size: 3rem;
+        --subtitle-size: 1rem; 
+        --nav-bar-link: 1rem;
+        --nav-bar-pad: 0.5rem 1rem;
+        --logo-nav-space: 2rem;
+    }
 }
 
 .slide{
